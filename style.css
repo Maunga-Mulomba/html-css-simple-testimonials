@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #efefef;
+}
+
+.container {
+  margin: 3rem 0;
+  background-color: white;
+  padding: 3rem;
+  width: 80%;
+}
+
+h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.border-line {
+  border: 3px solid black;
+}
+
+.border-line .card {
+  position: relative;
+  font-size: 0.85rem;
+  right: 10px;
+  bottom: 10px;
+  padding: 1rem 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  box-shadow: 1px 3px 2px 0px #ededed, -3px -1px 2px 0 #ededed;
+}
+
+.card i {
+  font-size: 1.2rem;
+}
+
+.card .close-quote {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card .name {
+  font-weight: 600;
+}
+
+/* MEDIA */
+@media (max-width: 1024px) {
+  .testimonials {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container {
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+}
